@@ -27,7 +27,7 @@ const HomeSlideShow = () => {
   }
 
   return (
-    <section className='relative w-full h-screen'>
+    <section className='relative w-full h-screen mt-[-100px]'>
       <div className='absolute inset-0 z-10 flex justify-between items-center px-4'>
         <button
           className="p-2 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 focus:outline-none focus:ring transition"

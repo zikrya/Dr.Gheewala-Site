@@ -2,8 +2,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-<div className='sticky top-0 z-50 mx-auto w-full border-white/5 px-2 backdrop-blur transition-all duration-200 sm:rounded-lg sm:border sm:bg-white/5 sm:px-6 lg:px-8 py-4'>
-    <div className='flex justify-between items-center'>
+<div className='sticky top-0 z-[1000] mx-auto w-full transition-all duration-200 sm:rounded-lg sm:px-6 lg:px-8 py-4'>
+    <div className='flex justify-between items-center text-white'>
         <div>
             <h1 className='text-2xl'>Anup R. Gheewala, MD</h1>
         </div>
