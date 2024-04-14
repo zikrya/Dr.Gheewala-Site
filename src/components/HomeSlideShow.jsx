@@ -28,6 +28,12 @@ const HomeSlideShow = () => {
 
   return (
     <section className='relative w-full h-screen mt-[-100px]'>
+      <div className='absolute top-1/2 left-24 z-20 p-10 backdrop-blur-md bg-white/30 rounded-lg'>
+        <h2 className='text-white text-4xl font-bold mb-4'>New York & New Jersey</h2>
+        <h1 className='text-white text-6xl font-bold mb-4'>Plastic Surgeon</h1>
+        <p className='text-white text-2xl mb-6'>Surgical & Non-Surgical Treatments</p>
+        <button className='bg-white text-black px-6 py-3 rounded-full font-medium shadow-md'>Our Practice →</button>
+      </div>
       <div className='absolute inset-0 z-10 flex justify-between items-center px-4'>
         <button
           className="p-2 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 focus:outline-none focus:ring transition"
