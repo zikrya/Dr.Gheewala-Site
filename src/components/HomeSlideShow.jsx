@@ -27,8 +27,8 @@ const HomeSlideShow = () => {
   }
 
   return (
-    <section className='relative w-full h-screen mt-[-100px]'>
-      <div className='absolute top-1/2 left-24 z-20 p-10 backdrop-blur-md bg-white/30 rounded-lg'>
+    <section className='relative w-full h-screen mt-[-8vh] '>
+      <div className='absolute top-1/3 left-24 z-20 p-10 backdrop-blur-2xl bg-white/30 rounded-lg'>
         <h2 className='text-white text-4xl font-bold mb-4'>New York & New Jersey</h2>
         <h1 className='text-white text-6xl font-bold mb-4'>Plastic Surgeon</h1>
         <p className='text-white text-2xl mb-6'>Surgical & Non-Surgical Treatments</p>
