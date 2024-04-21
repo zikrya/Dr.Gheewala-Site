@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import AboutMe from '../components/AboutMe';
 import HomeSlideShow from '../components/HomeSlideShow';
+import ContactForm from '../components/ContactForm';
 
 const Home = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Home = () => {
       <div data-aos="fade-up" className='pt-3'> {/* AOS animation */}
         <AboutMe />
       </div>
+      <ContactForm />
     </>
   );
 };

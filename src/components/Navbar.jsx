@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <div className={`sticky top-0 z-[1000] w-full transition-all duration-200 ${hasScrolled ? 'bg-black' : 'bg-transparent'}`}>
       <div className='flex justify-between items-center px-4 py-2 text-white'>
-        <h1 className='text-xl lg:text-2xl'>Rowe Plastic Surgery</h1>
+        <h1 className='text-xl lg:text-2xl'>ANUP R. GHEEWALA, MD</h1>
         <div className='lg:hidden'>
           <button onClick={toggleMenu} className="text-white">
             {isMenuOpen ? <XMarkIcon className="h-8 w-8" /> : <Bars3Icon className="h-8 w-8" />}
