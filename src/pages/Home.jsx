@@ -4,6 +4,7 @@ import 'aos/dist/aos.css'; // Import AOS styles
 import AboutMe from '../components/AboutMe';
 import HomeSlideShow from '../components/HomeSlideShow';
 import ContactForm from '../components/ContactForm';
+import Services from '../components/Services';
 
 const Home = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const Home = () => {
         <AboutMe />
       </div>
       <ContactForm />
+      <Services />
     </>
   );
 };
