@@ -1,5 +1,5 @@
 import React from 'react'
-
+import 'aos/dist/aos.css';
 const Services = () => {
     const procedures = [
         {
@@ -40,17 +40,19 @@ const Services = () => {
         },
       ];
 
-    return (
+      return (
         <div className="p-8">
           <div className="text-2xl font-semibold mb-4">Procedures</div>
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {procedures.map((procedure) => (
+            {procedures.map((procedure, index) => (
+              // Add the AOS effect to each procedure
               <li
                 key={procedure.name}
-                className="flex flex-col items-center justify-center p-4 border border-gray-300 rounded shadow-sm cursor-pointer transition-colors duration-300 ease-in-out hover:bg-black hover:text-white"
+                data-aos="fade-up" // AOS animation type
+                data-aos-delay={`${index * 100}`} // Each item will animate with a delay after the previous
+                className="flex flex-col items-center justify-center p-4 border border-gray-300 rounded shadow-sm cursor-pointer transition duration-300 ease-in-out hover:bg-black hover:text-white"
               >
-                {/* Render the SVG component for each procedure */}
-                <procedure.SvgComponent />
+                <procedure.SvgComponent className="w-16 h-16 text-current hover:text-white transition-colors duration-300" />
                 <div className="text-sm text-center">
                   {procedure.name}
                 </div>
@@ -59,6 +61,6 @@ const Services = () => {
           </ul>
         </div>
       );
-}
+    };
 
 export default Services;
