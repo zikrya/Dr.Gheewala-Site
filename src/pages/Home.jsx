@@ -20,8 +20,8 @@ const Home = () => {
       <div data-aos="fade-up" className='pt-3'> {/* AOS animation */}
         <AboutMe />
       </div>
-      <ContactForm />
       <Services />
+      <ContactForm />
     </>
   );
 };
