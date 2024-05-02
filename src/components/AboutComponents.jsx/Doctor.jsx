@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Doctor = () => {
   return (
@@ -12,12 +13,12 @@ const Doctor = () => {
         <div className="text-center mt-4 md:mt-0">
           <h2 className="text-xl md:text-2xl font-semibold">Dr. Anup R. Gheewala MD</h2>
           <p className="text-sm md:text-md mt-2">Board Certified Plastic Surgeon</p>
-          <a
-            href="/profile"
+          <Link
+            to="/dr-anup-gheewala"
             className="text-red-600 hover:text-red-800 transition-colors mt-4 text-xs md:text-sm"
           >
             VIEW PROFILE →
-          </a>
+          </Link>
         </div>
       </div>
       <div className='flex flex-col gap-4 md:w-2/3'>
