@@ -35,7 +35,6 @@ const ContactForm = () => {
         <div className="flex flex-col items-center bg-white py-16 px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-semibold text-gray-800 mb-2">Schedule</h2>
           <p className="text-2xl font-light text-gray-800 mb-4">A Free Consultation</p>
-          <p className="text-gray-600 text-sm mb-8">*Consult fee for cosmetic services only</p>
           <form className="w-full max-w-lg space-y-6" onSubmit={handleSubmit}>
             <div className="flex flex-col sm:flex-row gap-4">
               <input
