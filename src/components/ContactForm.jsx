@@ -18,16 +18,15 @@ const ContactForm = () => {
 
         try {
           const result = await emailjs.send(
-            'service_bfrvb31', // Replace it with your EmailJS service ID
-            'template_abm51uf', // Replace it with your EmailJS template ID
+            'service_bfrvb31',
+            'template_abm51uf',
             formData,
-            '1Cy0GqiyBUo22RyuE' // Replace it with your EmailJS user ID
+            '1Cy0GqiyBUo22RyuE'
           );
           console.log('Email successfully sent!', result.text);
-          // Clear form or show success message
+
         } catch (error) {
           console.error('Failed to send email. Error: ', error);
-          // Show error message
         }
       };
 
