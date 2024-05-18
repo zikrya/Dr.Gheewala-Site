@@ -5,6 +5,7 @@ import AboutMe from '../components/AboutMe';
 import HomeSlideShow from '../components/HomeSlideShow';
 import ContactForm from '../components/ContactForm';
 import Services from '../components/Services';
+import Footer from '../components/Footer';
 
 const Home = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const Home = () => {
       </div>
       <Services />
       <ContactForm />
+      <Footer />
     </>
   );
 };

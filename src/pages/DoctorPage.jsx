@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from '../components/Footer';
 
 const DoctorPage = () => {
   const [activeTab, setActiveTab] = useState('overview');
@@ -44,6 +45,7 @@ const DoctorPage = () => {
   };
 
   return (
+    <>
     <div className="min-h-screen bg-gray-100 py-10">
       <div className="container mx-auto max-w-5xl bg-white shadow-lg rounded-lg">
         <div className="flex flex-col lg:flex-row">
@@ -77,6 +79,8 @@ const DoctorPage = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

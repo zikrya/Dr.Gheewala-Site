@@ -33,7 +33,9 @@ const Navbar = () => {
   return (
     <div className={`sticky top-0 z-[1000] w-full transition-all duration-200 p-5 ${navbarClass}`}>
       <div className='flex justify-between items-center px-4 py-2 text-white'>
+        <Link to='/'>
         <h1 className='text-xl'>ANUP R. GHEEWALA, MD</h1>
+        </Link>
         <button onClick={toggleMenu} className="text-white">
           {isMenuOpen ? <XMarkIcon className="h-8 w-8" /> : <Bars3Icon className="h-8 w-8" />}
         </button>
@@ -45,8 +47,8 @@ const Navbar = () => {
           <div className="flex flex-col items-center justify-center space-y-8">
             <Link to="/" className="text-white text-2xl">Home</Link>
             <Link to="/about" className="text-white text-2xl">About Us</Link>
-            <a href="#breast" className="text-white text-2xl">Breast</a>
-            <a href="#body" className="text-white text-2xl">Body</a>
+            <Link to='/location' className="text-white text-2xl">Location</Link>
+            <Link to='/contact-us' className="text-white text-2xl">Contact Us!</Link>
             <a href="#face" className="text-white text-2xl">Face</a>
           </div>
           <div className="pb-8">
