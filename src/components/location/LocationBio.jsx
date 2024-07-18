@@ -5,19 +5,17 @@ const LocationBio = () => {
   const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
 
   const images = [
-    'https://source.unsplash.com/random/1920x1080/?brooklyn',
-    'https://source.unsplash.com/random/1920x1080/?newyork',
-    'https://source.unsplash.com/random/1920x1080/?city',
-    'https://source.unsplash.com/random/1920x1080/?building',
-    'https://source.unsplash.com/random/1920x1080/?architecture',
-    'https://source.unsplash.com/random/1920x1080/?street'
+    './IMG_4913.jpg',
+    './IMG_4914.jpg',
+    './IMG_4915.jpg',
+    './IMG_4917.jpg',
   ];
 
   return (
     <div className="relative flex flex-col items-center justify-center h-screen bg-gray-100 overflow-hidden">
       {/* Collage Background */}
-      <div className="absolute inset-0 grid grid-cols-3 gap-2 p-2">
-        {images.map((image, index) => (
+      <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-2 p-2">
+        {images.slice(0, 4).map((image, index) => (
           <div
             key={index}
             className="w-full h-full bg-cover bg-center rounded-lg"
@@ -28,8 +26,8 @@ const LocationBio = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
       {/* Content */}
-      <div className="relative z-10 text-center text-white p-12 rounded-lg shadow-lg bg-black bg-opacity-60 max-w-4xl mx-auto">
-        <h2 className="text-5xl font-semibold mb-6">Come See us!</h2>
+      <div className="relative z-10 text-center text-white p-12 rounded-lg shadow-lg bg-black bg-opacity-60 max-w-4xl mx-auto animate-fadeIn">
+        <h2 className="text-5xl font-semibold mb-6">Come See Us!</h2>
         <p className="text-3xl font-light mb-8">{address}</p>
         <a
           href={googleMapsLink}
