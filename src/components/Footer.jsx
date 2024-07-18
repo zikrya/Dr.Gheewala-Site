@@ -10,7 +10,7 @@ const Footer = () => {
             <h2 className="text-3xl font-bold">ANUP R. GHEEWALA, MD</h2>
             <p className="mt-2">Board Certified Plastic Surgeon</p>
             <p className="mt-2">3431 Guider Ave, Brooklyn, NY 11235</p>
-            <p className="mt-2">Phone: (123) 456-7890</p>
+            <p className="mt-2">Phone: (718) 616-2330</p>
             <p className="mt-2">Email: info@drgheewala.com</p>
           </div>
           <div className="mb-8 md:mb-0">
@@ -18,18 +18,15 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="hover:underline">Home</Link></li>
               <li><Link to="/about" className="hover:underline">About Us</Link></li>
-              <li><Link to="/services" className="hover:underline">Services</Link></li>
               <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
-              <li><Link to="/faqs" className="hover:underline">FAQs</Link></li>
-              <li><Link to="/privacy-policy" className="hover:underline">Privacy Policy</Link></li>
-              <li><Link to="/terms-of-service" className="hover:underline">Terms of Service</Link></li>
+              <li><Link to="/location" className="hover:underline">locations</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-2xl font-semibold mb-4">Hours of Operation</h3>
             <ul className="space-y-2">
-              <li>Monday - Friday: 9:00 AM - 5:00 PM</li>
-              <li>Saturday: 10:00 AM - 2:00 PM</li>
+              <li>Monday: 10:00 AM - 4:00 PM</li>
+              <li>Wednesday: 10:00 AM - 5:30 PM</li>
               <li>Sunday: Closed</li>
             </ul>
           </div>
